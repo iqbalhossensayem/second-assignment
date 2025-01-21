@@ -1,0 +1,125 @@
+
+
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  
+  font-style: normal;
+}
+
+
+
+body{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* shared style */
+.flex{
+  display: flex;
+}
+
+.btn{
+  font-weight: 600;
+  font-size: 1.25rem;
+  border: none;
+  padding: 10px 60px ;
+  border-radius: 12px;
+  color: white;
+}
+
+
+
+/* navbar style */
+
+.navbar{
+  justify-content: space-between;
+  align-items: center;
+}
+
+.school{
+  align-items: center;
+  gap: 10px;
+}
+.nav-title{
+  font-weight: bold ;
+  font-size: 2rem;
+}
+
+.nav-items {
+  list-style: none;
+  gap:32px;
+}
+
+
+/*  list style */
+#home{
+  color: orange;
+  
+}
+#about{
+  color: skyblue;
+}
+#facilities{
+  color:#05D4DF;
+}
+#admission{
+  color: #5D58EF;
+}
+
+.nav-links {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1, 25rem;
+}
+.nav-links:hover{
+  border-bottom: 1px solid;
+}
+
+.nav-btn{
+  background-color: orange;
+  transition: 0.7s;
+}
+.nav-btn:hover{
+  transform: scale(1.05);
+  background-color: darkorange;
+}
+
+.hamburger{
+  display: none;
+}
+
+
+
+
+
+
+
+/* responsive */
+@media screen and (max-width:576px) {
+
+
+  .navbar {
+    padding: 10px 30px;
+    border-bottom: 1px solid orange;
+    justify-content: space-between;
+
+}
+  .nav-title{
+    display: none;
+  }
+
+  .nav-lists{
+    display: none;
+  }
+  .nav-btn{
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+}
