@@ -237,7 +237,7 @@ body {
 
 }
 
-.fa-solid {
+.fa-circle-chevron-left , .fa-circle-chevron-right{
   font-size: 48px;
   color: orange;
   margin: 5px;
@@ -278,7 +278,7 @@ body {
   .hamburger {
     display: block;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 30px;
 
   }
 
