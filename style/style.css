@@ -90,6 +90,52 @@ body{
 }
 
 
+/* banner section */
+.banner{
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+.banner-intro{
+  width: 640px;
+}
+
+#orange-clr {
+  color: orange;
+}
+
+#blue-clr {
+  color: skyblue;
+}
+
+
+
+.banner-title{
+  font-weight: bold;
+  font-size: 3.5rem ;
+  align-items: center;
+  
+}
+
+.banner-description {
+  font-weight: 400;
+  font-size: 1.25rem;
+}
+
+.banner-btn{
+  background-color: black ;
+  transition: 0.7s;
+}
+.banner-btn:hover{
+  transform: scale(1.05);
+  background-color: rgb(46, 44, 44);
+}
+
+
+.banner-img{
+  width: 470px;
+}
+
 
 
 
@@ -120,6 +166,21 @@ body{
     display: block;
     cursor: pointer;
     font-size: 20px;
+
+}
+
+.banner {
+  flex-direction: column-reverse;
+  text-align: center;
+  justify-items: center;
+}
+
+.banner-intro {
+width: 90vw;
+  text-align: center;
+}
+.banner-img {
+  width: 90vw;
 
 }
 }
