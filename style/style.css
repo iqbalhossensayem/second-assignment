@@ -1,3 +1,6 @@
+
+
+
 .quicksand-font {
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
@@ -25,6 +28,8 @@ body {
   border-radius: 12px;
   color: white;
 }
+
+
 
 
 
@@ -250,7 +255,60 @@ body {
 
 }
 
+/* stories section */
 
+
+.stories{
+  /* background-image: url(/assets/bg.png); */
+  background-repeat: no-repeat;
+  text-align: center;
+  background-size: 0;
+ 
+
+  background: url(/assets/bg.png),linear-gradient(2deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+}
+
+.stories .stories-title{
+  font-weight:bold;
+  font-size: 2.8rem;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 80px;
+
+}
+
+.stories-box-container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) ;
+  gap: 20px;
+
+}
+
+.box-1{
+  grid-row:span 5; 
+  
+}
+
+
+
+.stories-btn{
+  background-color: black;
+  margin-bottom: 60px;
+  transition: 0.7s;
+}
+.stories-btn:hover{
+  transform: scale(1.05);
+  background-color: rgb(46, 44, 44);
+}
+
+
+
+/* footer */
+footer{
+  background-color: #01ACFD;
+  padding: 5% 0;
+ 
+}
 
 /* responsive */
 @media screen and (max-width:576px) {
