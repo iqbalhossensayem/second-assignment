@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+}
+
+
 .quicksand-font {
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
@@ -580,5 +585,41 @@ footer {
     font-size: 0.7rem;
     padding: 8px;
   }
+
+footer{
+  flex-direction: column;
+  padding: 20px;
+  text-align: left;
+  margin: 0;
+
+}
+
+.footer-description{
+  padding: 10px;
+}
+
+
+
+.footer-section-2 h3{
+padding: 10px;
+margin: 0;
+}
+
+.footer-section-2 ul{
+  padding-left: 0;
+}
+
+.footer-section-2 li{
+  margin: 5px ;
+ 
+}
+
+.footer-section-3{
+  text-align: left;
+}
+
+.contact-title{
+  padding: 10px;
+}
 
 }
