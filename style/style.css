@@ -1,6 +1,3 @@
-
-
-
 .quicksand-font {
   font-family: "Quicksand", serif;
   font-optical-sizing: auto;
@@ -10,7 +7,8 @@
 
 
 
-header, .curriculam {
+header,
+.curriculam {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -90,7 +88,7 @@ header, .curriculam {
 }
 
 .nav-links:hover {
- text-decoration:underline;
+  text-decoration: underline;
 }
 
 .nav-btn {
@@ -168,12 +166,9 @@ header, .curriculam {
 /* curriculam section */
 
 .curriculam {
-  background-image: url(/assets/bg.png);
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
+  background: url(/assets/bg.png);
   text-align: center;
-
-
-
   max-width: 1160px;
   margin: 0 auto;
 
@@ -201,7 +196,7 @@ header, .curriculam {
 
 }
 
-.curriculam-card a:hover{
+.curriculam-card a:hover {
   text-decoration: underline;
 }
 
@@ -260,13 +255,11 @@ header, .curriculam {
 
 .arrow-sign {
   text-align: center;
- 
   cursor: pointer;
-
-
 }
 
-.fa-circle-chevron-left , .fa-circle-chevron-right{
+.fa-circle-chevron-left,
+.fa-circle-chevron-right {
   font-size: 48px;
   color: orange;
   margin: 5px;
@@ -285,16 +278,18 @@ header, .curriculam {
 .stories {
   background-repeat: no-repeat;
   text-align: center;
-  background: url(/assets/bg.png),linear-gradient(2deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
-
+  background: url(/assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
 
 }
-.stories > h1 {
+
+
+.stories>h1 {
   text-align: center;
   color: #000;
   font-size: 2rem;
   font-weight: bold;
 }
+
 .stories-box-container {
   gap: 1.2rem;
   justify-content: center;
@@ -304,15 +299,20 @@ header, .curriculam {
 .box-left {
   width: 545px;
 }
-.story-description{
+
+.story-description {
   padding: 16px 38px;
   text-align: start;
   font-weight: 400;
   font-size: 1rem;
 }
+
+
 .box-left button {
-  background-color:#3CD8E8;
+  background-color: #3CD8E8;
 }
+
+
 .stories-box-container-right {
   display: grid;
   grid-template-columns: repeat(2, 290px);
@@ -320,6 +320,7 @@ header, .curriculam {
   align-items: center;
   gap: 20px;
 }
+
 .story-box-title {
   padding: 80px 0;
 }
@@ -339,29 +340,38 @@ header, .curriculam {
 .date {
   background: #95B226;
   color: white;
+  font-weight: 500;
+  font-size: 0.8rem;
   padding: 8px 16px;
   border-radius: 20px;
-  font-size: 0.8rem;
   border: none;
   position: relative;
   top: -20px;
 }
+
+
 .box-3-btn {
-  background-color:#5D58F0;
+  background-color: #5D58F0;
 }
+
+
 .story-title {
   font-size: 1rem;
   color: #333;
   padding: 24px;
   text-align: start;
 }
-.stories-btn{
+
+
+.stories-btn {
   background-color: black;
   margin-top: 60px;
   margin-bottom: 80px;
   transition: 0.7s;
 }
-.stories-btn:hover{
+
+
+.stories-btn:hover {
   transform: scale(1.05);
   background-color: rgb(46, 44, 44);
 }
@@ -371,10 +381,10 @@ header, .curriculam {
 
 
 /* footer */
-footer{
+footer {
   background-color: #01ACFD;
   padding: 5% 0;
- 
+
 }
 
 /* responsive */
@@ -434,13 +444,43 @@ footer{
     justify-items: center;
   }
 
-  .arrow-sign{
+  .arrow-sign {
     display: none;
   }
 
-  .box-1{
+  .box-left {
     display: none;
   }
 
-  
+
+  .stories {
+    padding-top: 40px;
+  }
+
+  .stories-box-container {
+    margin: 35px auto;
+  }
+
+  .stories-box h1 {
+    font-size: 1.6rem;
+    padding: 20px;
+  }
+
+
+  .stories-box-container-right {
+    grid-template-columns: repeat(2, 45%);
+    gap: 16px;
+  }
+
+
+  .story-title {
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .date {
+    font-size: 0.7rem;
+    padding: 8px;
+  }
+
 }
