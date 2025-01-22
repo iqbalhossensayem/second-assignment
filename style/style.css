@@ -10,7 +10,7 @@
 
 
 
-body {
+header, .curriculam {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -38,6 +38,15 @@ body {
 .navbar {
   justify-content: space-between;
   align-items: center;
+
+
+
+  max-width: 1160px;
+  margin: 0 auto;
+
+
+
+
 }
 
 .school {
@@ -81,7 +90,7 @@ body {
 }
 
 .nav-links:hover {
-  border-bottom: 1px solid;
+ text-decoration:underline;
 }
 
 .nav-btn {
@@ -103,6 +112,12 @@ body {
 .banner {
   align-items: center;
   justify-content: space-between;
+
+
+  max-width: 1160px;
+  margin: 0 auto;
+
+
 
 }
 
@@ -154,8 +169,13 @@ body {
 
 .curriculam {
   background-image: url(/assets/bg.png);
-  background-repeat: no-repeat;
+  background-repeat:no-repeat;
   text-align: center;
+
+
+
+  max-width: 1160px;
+  margin: 0 auto;
 
 }
 
@@ -179,6 +199,10 @@ body {
   text-decoration: none;
   cursor: pointer;
 
+}
+
+.curriculam-card a:hover{
+  text-decoration: underline;
 }
 
 
@@ -258,48 +282,91 @@ body {
 /* stories section */
 
 
-.stories{
-  /* background-image: url(/assets/bg.png); */
+.stories {
   background-repeat: no-repeat;
   text-align: center;
-  background-size: 0;
- 
-
   background: url(/assets/bg.png),linear-gradient(2deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
-}
 
-.stories .stories-title{
-  font-weight:bold;
-  font-size: 2.8rem;
+
+}
+.stories > h1 {
   text-align: center;
-  margin-top: 60px;
-  margin-bottom: 80px;
-
+  color: #000;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.stories-box-container {
+  gap: 1.2rem;
+  justify-content: center;
+  margin: 5rem auto;
 }
 
-.stories-box-container{
+.box-left {
+  width: 545px;
+}
+.story-description{
+  padding: 16px 38px;
+  text-align: start;
+  font-weight: 400;
+  font-size: 1rem;
+}
+.box-left button {
+  background-color:#3CD8E8;
+}
+.stories-box-container-right {
   display: grid;
-  grid-template-columns: repeat(3, 1fr) ;
+  grid-template-columns: repeat(2, 290px);
+  justify-content: center;
+  align-items: center;
   gap: 20px;
-
+}
+.story-box-title {
+  padding: 80px 0;
 }
 
-.box-1{
-  grid-row:span 5; 
-  
+.box {
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+  text-align: center;
 }
 
+.box img {
+  width: 100%;
+  height: auto;
+}
 
-
+.date {
+  background: #95B226;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  border: none;
+  position: relative;
+  top: -20px;
+}
+.box-3-btn {
+  background-color:#5D58F0;
+}
+.story-title {
+  font-size: 1rem;
+  color: #333;
+  padding: 24px;
+  text-align: start;
+}
 .stories-btn{
   background-color: black;
-  margin-bottom: 60px;
+  margin-top: 60px;
+  margin-bottom: 80px;
   transition: 0.7s;
 }
 .stories-btn:hover{
   transform: scale(1.05);
   background-color: rgb(46, 44, 44);
 }
+
+
 
 
 
@@ -370,4 +437,10 @@ footer{
   .arrow-sign{
     display: none;
   }
+
+  .box-1{
+    display: none;
+  }
+
+  
 }
